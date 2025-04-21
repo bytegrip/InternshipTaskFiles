@@ -3,18 +3,24 @@
 await ProcessNumberAsync(5);
 await ProcessNumberAsync(10);
 await ProcessNumberAsync(15);
-            
+
 try
 {
     await ProcessNumberAsync(0);
 }
-catch { }
+catch (Exception)
+{
+    Console.Write("");
+}
             
 try
 {
     await ProcessNumberAsync(13); 
 }
-catch { }
+catch (Exception)
+{
+    Console.Write("");
+}
 
 return;
 
